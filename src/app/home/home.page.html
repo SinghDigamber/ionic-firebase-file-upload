@@ -6,9 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div id="container">
-
+<ion-content>
     <ion-card class="ion-text-center" *ngIf="!isUploading && !isUploaded">
       <ion-card-header>
         <ion-card-title>Choose Images to Upload</ion-card-title>
@@ -32,5 +30,4 @@
       Data transfered: {{ snap.bytesTransferred | formatFileSize }}
     </div>    
 
-  </div>
 </ion-content>
